@@ -11,7 +11,7 @@ const byline = require('byline');
 
 
 var bridge =  function (file, args) {
-    var phantomjs = path.path.join(__dirname, "./bin/phantomjs")
+    var phantomjs = path.join(__dirname, "./bin/phantomjs")
 
     args = [path.resolve(file)].concat(args).sort(function (a, b) {
         // move flags to the beginning to please phantoms sucky argument parsing
