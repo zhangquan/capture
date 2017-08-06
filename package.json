@@ -1,0 +1,14 @@
+{
+  "name": "capture",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "scripts": {
+
+  },
+  "dependencies": {
+    "base64-stream": "^0.1.2",
+    "byline": "^4.2.1",
+    "object-assign": "^4.0.1",
+    "parse-cookie-phantomjs": "^1.0.0"
+  }
+}
