@@ -30,6 +30,11 @@ if (opts.userAgent) {
     page.settings.userAgent = opts.userAgent;
 }
 
+if (!opts.delay) {
+    opts.delay = 0
+}
+
+
 page.settings.resourceTimeout = (opts.timeout || 60) * 1000;
 
 phantom.cookies = opts.cookies;
@@ -61,6 +66,7 @@ page.viewportSize = {
 
 page.customHeaders = opts.headers || {};
 page.zoomFactor = opts.scale;
+
 
 page.open(opts.url, function (status) {
     if (status === 'fail') {
